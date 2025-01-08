@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regestier</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boosted@5.3.3/dist/css/boosted.min.css"
+      rel="stylesheet"
+      integrity="sha384-laZ3JUZ5Ln2YqhfBvadDpNyBo7w5qmWaRnnXuRwNhJeTEFuSdGbzl4ZGHAEnTozR"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Left Half -->
+        <div
+          class="col-4 text-white d-flex justify-content-center align-items-center"
+          style="height: 100vh; padding: 0"
+        >
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            style="height: 100%; width: 100%"
+          >
+            <div class="carousel-indicators">
+              <button
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active bg-warning"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+                class="bg-warning"
+              ></button>
+            </div>
+            <div class="carousel-inner" style="height: 100%; width: 100%">
+              <div class="carousel-item active" style="height: 100%">
+                <img
+                  src="imgs/pic2.jpg"
+                  class="d-block w-100"
+                  alt="First slide"
+                  style="object-fit: cover; height: 100%; width: 100%"
+                />
+              </div>
+              <div class="carousel-item" style="height: 100%">
+                <img
+                  src="imgs/pic1.jpg"
+                  class="d-block w-100"
+                  alt="Second slide"
+                  style="object-fit: cover; height: 100%; width: 100%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Half -->
+        <div
+          class="col-8 text-white d-flex flex-column justify-content-start"
+          style="height: 100vh"
+        >
+          <!-- Header Section -->
+          <header class="w-100 mb-4 border-bottom border-3">
+            <!-- mb-4 adds spacing between header and content -->
+            <nav class="navbar navbar-expand-lg">
+              <!-- Full-width navbar container -->
+              <div
+                class="container-fluid d-flex justify-content-between align-items-center"
+              >
+                <!-- Logo at the start -->
+                <a class="navbar-brand" href="#">
+                  <img
+                    src="imgs/logo.png"
+                    width="50"
+                    height="50"
+                    alt="Logo"
+                    loading="lazy"
+                  />
+                </a>
+
+                <!-- Navbar links at the end -->
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Help</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+          <!-- Content Section -->
+          <div
+            class="w-100 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="form-group col-lg-6 col-md-7 text-dark mb-3">
+              <h1>Create an account</h1>
+            </div>
+
+            <form class="w-50" id="formInput" method="get">
+              <div class="mb-4">
+                <label
+                  for="email"
+                  class="form-label text-dark w-100 is-required"
+                  >Email
+                </label>
+                <input type="email" class="form-control" id="email" />
+                <small class="text-dark">eg: username@domain.com</small>
+              </div>
+
+              <div class="mb-4">
+                <label
+                  for="mobile"
+                  class="form-label text-dark w-100 is-required"
+                  >Mobile
+                </label>
+                <input type="number" class="form-control" id="mobile" />
+                <small class="text-dark mb-3">eg: 077********</small>
+              </div>
+              <div class="mb-4">
+                <label for="password" class="form-label text-dark is-required"
+                  >Password
+                </label>
+                <div class="input-group">
+                  <!-- Password Input -->
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    minlength="6"
+                    maxlength="18"
+                  />
+                  <!-- Eye Icon to Toggle Password Visibility -->
+                  <span
+                    class="input-group-text"
+                    id="toggle-password"
+                    style="cursor: pointer"
+                  >
+                    <i class="fa-solid fa-eye"></i>
+                  </span>
+                </div>
+                <small class="text-dark"
+                  >The Password should be between 6-18 characters.</small
+                >
+              </div>
+
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label text-dark"
+                  for="flexCheckDefault"
+                >
+                  I agree to the <a href="">terms & conditions</a> Orange. *
+                </label>
+              </div>
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label
+                  class="form-check-label text-dark"
+                  for="flexCheckChecked"
+                >
+                  Receive Coding Academy Newsletter.
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary mt-3 w-100">
+                Submit
+              </button>
+              <small class="text-danger" id="txtInvalid"></small>
+              <button type="submit" class="btn btn-outline-dark mt-3 w-100">
+                Already Have an account?
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/boosted@5.3.3/dist/js/boosted.bundle.min.js"
+      integrity="sha384-3RoJImQ+Yz4jAyP6xW29kJhqJOE3rdjuu9wkNycjCuDnGAtC/crm79mLcwj1w2o/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main7.js"></script>
+  </body>
+</html>

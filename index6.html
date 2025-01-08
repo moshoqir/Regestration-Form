@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .circle-container {
+        width: 200px;
+        height: 190px;
+        border-radius: 60%;
+        background-color: #991be1; /* Blue color background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .circle-container img {
+        width: 260px;
+        height: 280px;
+      }
+
+      .circle-image {
+            width: 100%;
+            max-width: 400px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: auto;
+            display: block;
+        }
+
+        .circle-div {
+        width: 200px;
+        height: 190px;
+        border-radius: 90%;
+        background-color: #991be1; /* Blue color background */
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: relative;
+      }
+
+      .circle-div img {
+        width: 290px;
+        height: 280px;
+      }
+        .feature-icon {
+            font-size: 2rem;
+            color: #6c63ff;
+        }
+        .feature-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="container d-flex justify-content-between align-content-center">
+      <a class="navbar-brand text-dark align-self-center" href="#"
+        >Start Bootstrap</a
+      >
+      <nav class="navbar navbar-expand d-flex justify-content-between">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center"
+        >
+          <!-- Navbar Brand -->
+
+          <!-- Navbar Links -->
+          <div
+            class="collapse navbar-collapse justify-content-center align-items-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-dark"
+                  aria-current="page"
+                  href="#"
+                  >Features</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Download</a
+                >
+              </li>
+              <button class="btn btn-primary w-50" type="submit">
+                <i class="fa-solid fa-comments"></i> Send feedback
+              </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container bg-light p-5">
+      <div class="row">
+        <div
+          class="col-6 d-flex flex-column justify-content-center align-items-center h-100"
+        >
+          <div
+            class="container d-flex flex-column justify-content-center align-items-center"
+          >
+            <h2>
+              Showcase your <br />
+              app beautifully
+            </h2>
+          </div>
+
+          <div
+            class="container d-flex flex-column justify-content-center align-items-center mt-3"
+          >
+            <p>
+              Lorem ipsum dolor, neque optio, numquam nihil laboriosam error
+              suscipit velit dolorem aut alias similique obcaecati!
+            </p>
+          </div>
+
+          <div
+            class="container d-flex flex-row justify-content-center align-items-between mt-3 "
+          >
+            <img
+              src="imgs/google.png"
+              class="rounded mx-auto d-block"
+              alt="..."
+              style="width: 65px; left: 15%; position: relative"
+            />
+            <img
+              src="imgs/apple.jpg"
+              class="rounded mx-auto d-block"
+              alt="..."
+              style="width: 65px; position: relative; right: 20%; "
+              
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="d-flex justify-content-center align-items-center mt-5">
+            <div class="circle-container">
+              <img src="imgs/iphone.png" alt="Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-5 d-flex flex-row justify-content-center align-items-center" style="background-color: #8D1FE4;">
+
+        <h4 class="text-light">"An intiuative solution to a common problem <br> that we all face, wrapped in a single app!"</h4>
+
+    </div>
+
+    <!-- Mohammad's part -->
+
+    <div class="container mt-5 col ">
+        
+      <div class="d-flex justify-content-center align-items-center mt-5 gap-5">
+          <div class="circle-div">
+              <img src="imgs/iphone.png" alt="Image" />
+            </div>
+          <div class="col-md-4 fs-6">
+              <div class="row">
+                  <div class="col-md-6 feature-box  ">
+                      <i class="feature-icon fas fa-mobile-alt"></i>
+                      <h5>Device Mockups</h5>
+                      <p>Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                  </div>
+                  <div class="col-md-6 feature-box">
+                      <i class="feature-icon fas fa-camera"></i>
+                      <h5>Flexible Use</h5>
+                      <p>Put an image, video, animation, or anything else in the screen!</p>
+                  </div>
+                  <div class="col-md-6 feature-box">
+                      <i class="feature-icon fas fa-gift"></i>
+                      <h5>Free to Use</h5>
+                      <p>As always, this theme is free to download and use for any purpose!</p>
+                  </div>
+                  <div class="col-md-6 feature-box">
+                      <i class="feature-icon fas fa-code-branch"></i>
+                      <h3>Open Source</h3>
+                      <p>Since this theme is MIT licensed, you can use it commercially!</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+  </div>
+    <!-- Hussam's part -->
+
+    <section class="container py-5">
+      <div class="row align-items-center bg-light m-0 p-2">
+
+          <!-- Left  side -->
+
+          <div class="col-md-6 text-center text-md-start">
+              <h2 class="fw-bold mb-3">Enter a new age of <br> <span>web design</span></h2>
+              <p class="text-muted">
+                  This section is perfect for featuring some information about your application, 
+                  why it was built, the problem it solves, or anything else! There's plenty of space 
+                  for text here, so don't worry about writing too much.
+              </p>
+          </div>
+
+          <!-- Right Side  -->
+
+          <div class="col-md-6 d-flex justify-content-center">
+              <img src="imgs/imgpurple.png" alt="Circular Graphic" class="circle-image">
+          </div>
+      </div>
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

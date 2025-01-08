@@ -1,0 +1,16 @@
+#tr1 td{
+background-color: #F5C6CB;
+}
+
+#tr2 td{
+
+    background-color: #FFEEBA;
+}
+
+#tr3 td{
+    background-color: #9FCDFF;
+}
+
+th, td {
+    border-right: 1px solid #dee2e6;
+}
